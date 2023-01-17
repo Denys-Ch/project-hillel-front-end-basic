@@ -1,0 +1,107 @@
+.clients {
+    &__content {
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 120px;
+        &--01 {
+            background-color: $hillel_bg;
+        }
+        &--02 {
+            background-color: $wannabiz_bg;
+        }
+        &--03 {
+            background-color: $tapgerine_bg;
+        }
+        &--04 {
+            background-color: $dlook_bg;
+        }
+        &--05 {
+            background-color: $orangear_bg;
+        }
+        &--06 {
+            background-color: $adtelligent_bg;
+        }
+        &--07 {
+            background-color: $clicky_bg;
+        }
+        &--08 {
+            background-color: $eco-leasing_bg;
+        }
+        &--09 {
+            background-color: $infratek_bg;
+        }
+        &--10 {
+            background-color: $city-park_bg;
+        }
+        &--11 {
+            background-color: $artprint_bg;
+        }
+        &--12 {
+            background-color: $ultimatecard_bg;
+        }
+        &--hidden {
+            display: none;
+        }
+    }
+    &__title {
+        text-align: center;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: $main_regular;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        padding-bottom: 28px;
+        &--services {
+            margin-top: 81px;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .clients {
+        &__content {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(4, 1fr);
+        }
+        &__item {
+            &--hidden {
+                display: flex;
+            }
+        }
+        &__title {
+            padding-bottom: 30px;
+            &--services {
+                margin-top: 79px;
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .clients {
+        &__content {
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+        }
+        &__title {
+            padding-bottom: 31px;
+            &--services {
+                margin-top: 80px;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .clients {
+        &__title {
+            padding-bottom: 30px;
+        }
+    }
+}

@@ -1,0 +1,28 @@
+.link {
+    display: inline-flex;
+    position: relative;
+    align-items: center;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $active_regular;
+    &:hover {
+        color: $active_accent;
+    }
+    &:hover + .link-arrow {
+        transform: translate(15px);
+    }
+    &:hover + .link-arrow .link-path {
+        stroke: $active_accent;
+    }
+    &--slider {
+        margin-right: -5px;
+    }
+    &-arrow {
+        transition-duration: 300ms;
+        transition-property: transform;
+    }
+}

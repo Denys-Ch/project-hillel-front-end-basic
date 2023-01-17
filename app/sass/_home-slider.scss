@@ -1,0 +1,135 @@
+.home-slider {
+    position: relative;
+    margin-top: 50px;
+    padding: 0 15px;
+    &__item {
+        background-color: $grey_bg;
+        border-radius: 12px;
+        padding-bottom: 30px;
+        margin-bottom: 107px;
+    }
+    &__img {
+        display: block;
+        height: 500px;
+        margin-bottom: 29px;
+    }
+    &__photo {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 12px 12px 0px 0px;
+    }
+    &__text {
+        padding: 0 30px;
+        overflow-wrap: break-word;
+    }
+    &__desc {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gradient_red_text;
+        background-clip: text;
+        color: transparent;
+        padding-bottom: 31px;
+        padding-top: 4px;
+    }
+    &__name {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey_text;
+        padding-bottom: 6px;
+    }
+    &__position {
+        font-size: 14px;
+        line-height: 22px;
+        color: $grey_text;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-slider {
+        padding: 0 45px;
+        display: flex;
+        justify-content: center;
+        max-width: 100%;
+        margin-top: 80px;
+        &__item {
+            max-width: 100%;
+            padding-bottom: 30px;
+        }
+        &__photo {
+            max-width: 100%;
+        }
+        &__desc {
+            font-size: 38px;
+            line-height: 46px;
+            max-width: 100%;
+        }
+        &__name {
+            max-width: 100%;
+            padding-bottom: 4px;
+        }
+        .slider-dots {
+            bottom: 61px;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .home-slider {
+        max-width: 100%;
+        padding: 0 45px;
+        &__item {
+            display: grid;
+            grid-template-columns: 44.3% 55.7%;
+            padding-bottom: 0;
+            margin-bottom: 106px;
+        }
+        &__text {
+            padding: 30px 30px 16px;
+        }
+        &__desc {
+            padding-top: 3px;
+            padding-bottom: 30px;
+        }
+        &__img {
+            height: 100%;
+        }
+        &__photo {
+            max-width: 100%;
+            border-radius: 12px 0 0px 12px;
+            margin-bottom: 0;
+            height: 100%;
+        }
+        &__name {
+            padding-bottom: 5px;
+        }
+        &__position {
+            padding-bottom: 15px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .home-slider {
+        margin-bottom: 5px;
+        max-width: 100%;
+        padding: 0;
+        &__item {
+            grid-template-columns: 30.3% 69.7%;
+            margin-bottom: 102px;
+        }
+        &__img {
+            padding: 0;
+            margin-bottom: -5px;
+        }
+        &__desc {
+            max-width: 100%;
+            line-height: 46px;
+        }
+        .slider-dots {
+            bottom: 57px;
+        }
+    }
+}

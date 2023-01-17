@@ -1,0 +1,50 @@
+.modal-nav-mobile {
+    display: none;
+    background-color: $modal_dark_screen;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+    &__popup {
+        width: 375px;
+        margin: 110px auto 0;
+        background-color: $white_text;
+    }
+    &__list {
+        list-style: none;
+        padding-left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0 12px;
+    }
+    &__item {
+        background-color: $grey_bg;
+        border-radius: 12px;
+        text-align: center;
+        padding: 7px 0;
+        margin-top: 8px;
+        margin-bottom: 7px;
+        &:active {
+            background-color: $grey_separator;
+        }
+        &:first-child {
+            margin-top: 12px;
+        }
+        &:last-child {
+            margin-bottom: 12px;
+        }
+    }
+    &__link {
+        text-decoration: none;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: $active_regular;
+        &.active {
+            color: $active_accent;
+        }
+    }
+}

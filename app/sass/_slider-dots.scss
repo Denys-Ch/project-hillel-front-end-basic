@@ -1,0 +1,39 @@
+.slider-dots {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    bottom: -46px;
+    left: 0;
+    right: 0;
+    &__item {
+        padding: 0 7px;
+        &:not(.slider-dots__item.active):hover .slider-dots__btn {
+            background-color: $active_regular_opaque_2;
+        }
+    }
+    &__item.active &__btn {
+        background-color: $active_regular;
+    }
+    &__btn {
+        width: 16px;
+        height: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: $active_regular_opaque;
+        font-size: 0;
+        border-radius: 50%;
+    }
+}
+
+@media (min-width: 768px)  {
+    .slider-dots {
+        &__item {
+            &--hidden {
+                display: none;
+            }
+        }
+    } 
+}
+

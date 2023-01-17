@@ -1,0 +1,55 @@
+.background-wrapper {
+    border-radius: 0px 0px 12px 12px;
+    background: $gradient_main;
+    position: relative;
+    &::after {
+        content: "";
+        height: 10px;
+        background-color: $grey_shadow;
+        position: absolute;
+        bottom: -10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    &::before {
+        content: "";
+        height: 20px;
+        background-color: $grey_shadow_2;
+        position: absolute;
+        bottom: -20px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+    }
+    &--home {
+        background: url("../img/symbol-h.svg") no-repeat center top,
+            $gradient_main;
+        background-size: 523px 600px, cover;
+    }
+}
+
+@media (min-width: 768px) {
+    .background-wrapper {
+        padding: 3px 44px 0;
+        &--home {
+            background-size: 893px 1024px, cover;
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .background-wrapper {
+        &--home {
+            background-size: 670px 768px, cover;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .background-wrapper {
+        &--home {
+            background-size: 697px 799px, cover;
+        }
+    }
+}
