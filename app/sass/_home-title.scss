@@ -23,9 +23,9 @@
         display: grid;
         justify-items: center;
         align-items: end;
-        grid-template-rows: 41% 59%;
+        grid-template-rows: 39.6% 59%;
         padding: 0;
-        margin-bottom: 88px;
+        margin-bottom: 77px;
         &__text {
             padding-bottom: 0;
             padding-right: 30px;
@@ -37,6 +37,7 @@
     .home-title {
         height: 621px;
         grid-template-rows: 45% 54%;
+        margin-bottom: 88px;
     }
 }
 

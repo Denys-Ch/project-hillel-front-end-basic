@@ -7,11 +7,11 @@
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
     font-weight: 400;
-    min-width: 375px;
+    min-width: 345px;
 }
 
 .container {
-    min-width: 375px;
+    min-width: 345px;
     max-width: 1350px;
     padding: 0 15px;
     margin: 0 auto;
@@ -41,4 +41,9 @@
     padding: 0;
     clip: rect(0 0 0 0);
     overflow: hidden;
+}
+
+.stop-scroll {
+    overflow: hidden;
+    height: 100%;
 }

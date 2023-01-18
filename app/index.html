@@ -60,15 +60,20 @@
                     <div class="header__logo-expanded header__logo-expanded--home"></div>
                 </div>
                 <nav class="menu menu--home">
-                    <button class="menu__btn menu__btn--dark" type="button"></button>
+                    <div class="menu__overlay"></div>
                     <ul class="menu__list">
-                        <li><a class="menu__link menu__link--dark" href="about-us.html">about us</a></li>
-                        <li><a class="menu__link menu__link--dark" href="#">services</a></li>
-                        <li><a class="menu__link menu__link--dark" href="#">team</a></li>
-                        <li><a class="menu__link menu__link--dark" href="#">publications</a></li>
-                        <li><a class="menu__link menu__link--dark" href="#">contact</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--dark" href="about-us.html">about us</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--dark" href="#">services</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--dark" href="#">team</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--dark" href="#">publications</a></li>
+                        <li class="menu__item"><a class="menu__link menu__link--dark" href="#">contact</a></li>
                     </ul>
                 </nav>
+                <div class="header__btn">
+                    <span class="header__btn-line header__btn-line--dark"></span>
+                    <span class="header__btn-line header__btn-line--dark"></span>
+                    <span class="header__btn-line header__btn-line--dark"></span>
+                </div>
             </header>
             <section class="home-title">
                 <h1 class="home-title__text">you legal solutions provider</h1>
@@ -200,8 +205,8 @@
             </div>
         </div>
         <section class="clients">
-            <h2 class="visually-hidden">clients</h2>
             <div class="container container--large">
+                <h2 class="visually-hidden">clients</h2>
                 <h2 class="clients__title">They already trust us</h2>
                 <div class="clients__content">
                     <div class="clients__item clients__item--01">
@@ -353,30 +358,7 @@
             </div>
         </div>
     </footer>
-    <div class="container">
-        <div class="modal-nav-mobile">
-            <div class="modal-nav-mobile__popup">
-                <ul class="modal-nav-mobile__list">
-                    <li class="modal-nav-mobile__item">
-                        <a class="modal-nav-mobile__link" href="#">about us</a>
-                    </li>
-                    <li class="modal-nav-mobile__item">
-                        <a class="modal-nav-mobile__link" href="#">services</a>
-                    </li>
-                    <li class="modal-nav-mobile__item">
-                        <a class="modal-nav-mobile__link" href="#">team</a>
-                    </li>
-                    <li class="modal-nav-mobile__item">
-                        <a class="modal-nav-mobile__link" href="#">publications</a>
-                    </li>
-                    <li class="modal-nav-mobile__item">
-                        <a class="modal-nav-mobile__link" href="#">contacts</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-    </div>
+    <script src="js/all.js"></script>
 </body>
 
 </html>

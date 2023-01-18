@@ -53,15 +53,20 @@
                 <div class="header__logo-expanded">about us</div>
             </div>
             <nav class="menu">
-                <button class="menu__btn" type="button"></button>
-                <ul class="menu__list">
-                    <li><a class="menu__link active" href="#">about us</a></li>
-                    <li><a class="menu__link" href="#">services</a></li>
-                    <li><a class="menu__link" href="#">team</a></li>
-                    <li><a class="menu__link" href="#">publications</a></li>
-                    <li><a class="menu__link" href="#">contact</a></li>
-                </ul>
-            </nav>
+                    <div class="menu__overlay"></div>
+                    <ul class="menu__list">
+                        <li class="menu__item"><a class="menu__link active" href="about-us.html">about us</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">team</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">publications</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#">contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header__btn">
+                    <span class="header__btn-line"></span>
+                    <span class="header__btn-line"></span>
+                    <span class="header__btn-line"></span>
+                </div>
         </header>
     </div>
     <main>
@@ -132,34 +137,34 @@
                 <div class="achievments__slider">
                     <div class="achievments__slider-item">
                         <picture>
-                            <source media="(min-width: 992px)" srcset="img/achievments-logo-01.png 1x, img/achievments-logo-01@2x.png 2x">
-                            <img class="achievments__slider-img img-responsive"
-                                src="img/achievments-logo-sm-01.png" srcset="img/achievments-logo-sm-01@2x.png 2x"
-                                alt="the legal 500 logo">
+                            <source media="(min-width: 992px)"
+                                srcset="img/achievments-logo-01.png 1x, img/achievments-logo-01@2x.png 2x">
+                            <img class="achievments__slider-img img-responsive" src="img/achievments-logo-sm-01.png"
+                                srcset="img/achievments-logo-sm-01@2x.png 2x" alt="the legal 500 logo">
                         </picture>
                     </div>
                     <div class="achievments__slider-item achievments__slider-item--hidden">
                         <picture>
-                            <source media="(min-width: 992px)" srcset="img/achievments-logo-02.png 1x, img/achievments-logo-02@2x.png 2x">
-                            <img class="achievments__slider-img img-responsive"
-                                src="img/achievments-logo-sm-02.png" srcset="img/achievments-logo-sm-02@2x.png 2x"
-                                alt="legal awards logo">
+                            <source media="(min-width: 992px)"
+                                srcset="img/achievments-logo-02.png 1x, img/achievments-logo-02@2x.png 2x">
+                            <img class="achievments__slider-img img-responsive" src="img/achievments-logo-sm-02.png"
+                                srcset="img/achievments-logo-sm-02@2x.png 2x" alt="legal awards logo">
                         </picture>
                     </div>
                     <div class="achievments__slider-item achievments__slider-item--hidden">
                         <picture>
-                            <source media="(min-width: 992px)" srcset="img/achievments-logo-03.png 1x, img/achievments-logo-03@2x.png 2x">
-                            <img class="achievments__slider-img img-responsive"
-                                src="img/achievments-logo-sm-03.png" srcset="img/achievments-logo-sm-03@2x.png 2x"
-                                alt="market leaders logo">
+                            <source media="(min-width: 992px)"
+                                srcset="img/achievments-logo-03.png 1x, img/achievments-logo-03@2x.png 2x">
+                            <img class="achievments__slider-img img-responsive" src="img/achievments-logo-sm-03.png"
+                                srcset="img/achievments-logo-sm-03@2x.png 2x" alt="market leaders logo">
                         </picture>
                     </div>
                     <div class="achievments__slider-item achievments__slider-item--hidden">
                         <picture>
-                            <source media="(min-width: 992px)" srcset="img/achievments-logo-04.png 1x, img/achievments-logo-04@2x.png 2x">
-                            <img class="achievments__slider-img img-responsive"
-                                src="img/achievments-logo-sm-04.png" srcset="img/achievments-logo-sm-04@2x.png 2x"
-                                alt="ukrainian law firms logo">
+                            <source media="(min-width: 992px)"
+                                srcset="img/achievments-logo-04.png 1x, img/achievments-logo-04@2x.png 2x">
+                            <img class="achievments__slider-img img-responsive" src="img/achievments-logo-sm-04.png"
+                                srcset="img/achievments-logo-sm-04@2x.png 2x" alt="ukrainian law firms logo">
                         </picture>
                     </div>
                     <ul class="slider-dots">
@@ -192,7 +197,7 @@
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__location">
-                    <p class="footer__address">Kyiv, Mechnikova str., 14/1</p>
+                    <p class="footer__address footer__address--about">Kyiv, Mechnikova str., 14/1</p>
                     <a class="footer__map" href="#">On map</a>
                 </div>
                 <div class="footer__contacts">
@@ -238,6 +243,7 @@
             </div>
         </div>
     </div>
+    <script src="js/all.js"></script>
 </body>
 
 </html>
