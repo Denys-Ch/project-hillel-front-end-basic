@@ -1,7 +1,7 @@
-const menu_btn = document.querySelector(".header__btn")
-const menu = document.querySelector(".menu")
-const body = document.querySelector(".body")
-const overlay = document.querySelector(".menu__overlay")
+var menu_btn = document.querySelector(".header__btn")
+var menu = document.querySelector(".menu")
+var body = document.querySelector(".body")
+var overlay = document.querySelector(".menu__overlay")
 
 menu_btn.addEventListener("click", function() {
     menu.classList.toggle("show")
